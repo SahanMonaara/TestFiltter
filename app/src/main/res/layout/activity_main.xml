@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.filtertest.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/textMenuIndex"
+            android:hint="Index"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:hint="Menu Name"
+            android:id="@+id/textMenuName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:onClick="addButtonClicked"
+            android:id="@+id/addButton"
+            android:padding="12dp"
+            android:text="ADD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:onClick="removeButtonClicked"
+            android:id="@+id/removeButton"
+            android:padding="12dp"
+            android:text="REMOVE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:onClick="updateButtonClicked"
+            android:id="@+id/updateButton"
+            android:padding="12dp"
+            android:text="UPDATE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!--<Spinner
+        android:id="@+id/spinner"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="175dp"
+        android:layout_alignParentLeft="true">
+
+    </Spinner>-->
+
+
+</RelativeLayout>
